@@ -1,0 +1,3 @@
+html body .ad-block :not(.h-auto) {
+  height: inherit !important;
+}

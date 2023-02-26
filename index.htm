@@ -1,0 +1,1783 @@
+﻿<html lang="ru"><head>
+<script src="../ads/system/context.js" async=""></script>
+  <meta name="telderi" content="236585730765b4cbabd55840c49d04ae">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="JKnle_zKsiiIn0qpKXrvdhAUxv-O8BSNI3vk5WXFtxZDzJYOjufHEL_XK4QQMYURJXrrmPzJYd5rN5SyJIb4cQ==">
+  <title>Виртуальный гардероб </title>
+  <link rel="preload" href="styles.css" as="style">
+
+
+  <link rel="preload" href="../css/cookie-consent.css" as="style">
+  <link rel="preload" href="../css/google-ad.css" as="style">
+  <link rel="preload" href="../css/main.css" as="style">
+
+  <link rel="preload" href="../js/vendors.js" as="script">
+  <link rel="preload" href="../js/main.js" as="script">
+
+
+  <link rel="preload" href="../fonts/roboto/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/roboto/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/roboto/Roboto-MediumItalic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/roboto/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/roboto/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="../fonts/roboto/Roboto-Italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+
+  <link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
+  <link rel="canonical" href="index.htm">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru">
+<meta property="og:url" content="https://imagecorp.ru/online-stylist/">
+<meta property="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<link href="../css/cookie-consent.css" rel="stylesheet">
+<link href="../css/google-ad.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+<style>
+  .wardrobe-body__inner.wedding-wardrobe, .wardrobe-body__inner.women-wardrobe {
+    background-image: url(../images/girl-2.jpg);
+  }
+
+</style></head>
+
+<body class="redesigned" style="">
+    
+  <div class="main-container inner-page">
+            <nav class="main-categories fixed fixed-show">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <div class="main-categories__list-wrap">
+          </div>
+    <div class="auth-block d-flex align-items-center">
+                  <a class="mr-3 auth-img" href="#" data-toggle="modal" data-target="#auth-modal">
+                              <svg class="icon icon-user-o ">
+              <use xlink:href="https://imagecorp.ru/images/sprite.svg#user-o"></use>
+            </svg>
+                  </a>
+      <div>
+                  <div class="mb-0 h5">Добро пожаловать!</div><a href="#" data-toggle="modal" data-target="#auth-modal">Вход | Регистрация</a>
+              </div>
+    </div>
+  </div>
+</nav>    <main class="content">
+            <div class="container ">
+                <nav aria-label="breadcrumb">
+</nav>
+<section class="d-flex flex-tablet-column">
+  <div class="content-body">
+    
+<h1 class="mb-4 title-1 __reset-border __blackColor">Примерить стиль одежды онлайн</h1>
+
+<div class="wardrobe d-flex flex-wrap align-items-top">
+  <div class="wardrobe-body" id="wardrobeBody">
+    <div class="wardrobe-body__inner women-wardrobe">
+      <div class="wardrobe-upload d-flex flex-column align-items-center justify-content-center">
+        <h3 class="sub-title-1">Чтобы начать — загрузите своё <br> фото в полный рост</h3>
+        <p>Рекомендуемый размер изображения 420 х 700 </p><a class="btn btn-main click-another-btn" href="#" data-target="#wardrobe-upload">Загрузить изображение</a>
+      </div>
+              <div class="wardrobe-main-img draggable resize-drag resizable">
+          <div class="resizers">
+            <div class="resizer resize-top resize-left"></div>
+            <div class="resizer resize-bottom resize-right"></div><img id="preview-photo" src="../images/temp/girl.jpg"><a class="remove-img" data-target="#preview-photo" data-diactivate="photo-uploaded" data-input="#full-photo" href="#">
+              <svg class="icon icon-close ">
+                <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+              </svg></a>
+          </div>
+        </div>
+        <div class="dress-img draggable resize-drag resizable">
+          <div class="resizers">
+            <div class="resizer resize-top resize-left"></div>
+            <div class="resizer resize-bottom resize-right"></div><img id="dress-photo" src="">
+          </div>
+        </div>
+        <div class="dress-style" id="dress-style"></div>
+            
+    </div>
+    <div class="wardrobe-actions">
+      <label class="btn btn-main __smaller mr-4 mb-3" id="wardrobe-upload">Загрузить фото
+        <input class="d-none" id="full-photo" type="file">
+      </label><a id="save-style" class="btn btn-main __white __smaller mb-3" href="#">Сохранить результат</a>
+
+
+              <a href="#" data-toggle="modal" data-target="#auth-modal">Перейти в «Мои образы»</a>
+      
+      
+    </div>
+  </div>
+  <div class="wardrobe-sidebar">
+    <h3 class="sub-title-1 mb-4">Выберите пол</h3>
+    <nav>
+      <div class="clothes-style-tab nav nav-tabs default-tabs d-flex" id="clothes-styles-tab" role="tablist">
+        <a class="nav-item nav-link mb-2 active show" data-addclass="women-wardrobe" data-removeclass="men-wardrobe" id="nav-clothe-style-tab-2" data-toggle="tab" href="#nav-clothe-style-2" role="tab" aria-controls="nav-clothe-style" aria-selected="true"><span></span>Женщина</a>
+        <a class="nav-item nav-link" data-addclass="men-wardrobe" data-removeclass="women-wardrobe" id="nav-clothe-style-tab-1" data-toggle="tab" href="#nav-clothe-style-1" role="tab" aria-controls="nav-clothe-style" aria-selected="false"><span></span>Мужчина</a>
+      </div>
+    </nav>
+    <h3 class="sub-title-1 mb-4">Выберите стиль</h3>
+    <div class="tab-content" id="nav-clothes-styles-tabContent">
+      <div class="tab-pane fade" id="nav-clothe-style-1" role="tabpanel" aria-labelledby="nav-clothe-style-tab-1">
+        <div class="clothes-slider __men dresses">
+          <div class="owl-carousel owl-theme owl-custom-btns dresses__inner resizeable-imgs owl-loaded owl-drag owl-hidden">
+                                      
+                          
+                          
+                      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1320px;"><div class="owl-item active" style="width: 400px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-1.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/men/man-clothe-1-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-2.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-2-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-3.png" data-style="гранж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-3-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-4.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-4-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-5.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-5-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-6.png" data-style="драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-6-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-7.png" data-style="драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-7-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-8.png" data-style="кантри">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-8-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-9.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-9-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 400px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-10.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-10-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-11.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-11-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-12.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-12-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-13.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-13-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-14.png" data-style="натуральный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-14-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-15.png" data-style="ретро">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-15-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-16.png" data-style="рок">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-16-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-17.png" data-style="сафари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-17-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-18.png" data-style="спорт">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-18-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 400px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-19.png" data-style="спорт">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-19-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-20.png" data-style="творческий мужской">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-20-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-21.png" data-style="хип хоп">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-21-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-22.png" data-style="хип хоп">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-22-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-23.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-23-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-24.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-24-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div></div></div>
+			  
+			  <div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div></div>
+        </div>
+        <div class="clothes-slider __men dresses __for-tablet">
+          <div class="owl-carousel owl-theme owl-custom-btns dresses__inner resizeable-imgs owl-loaded owl-drag">
+                                      
+                          
+                          
+                      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 120px;"><div class="owl-item active" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                       <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-1.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/men/man-clothe-1-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-2.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-2-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-3.png" data-style="гранж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-3-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-4.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-4-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-5.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-5-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-6.png" data-style="драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-6-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-7.png" data-style="драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-7-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-8.png" data-style="кантри">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-8-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-9.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-9-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-10.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-10-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-11.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-11-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-12.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-12-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-13.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-13-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-14.png" data-style="натуральный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-14-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-15.png" data-style="ретро">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-15-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-16.png" data-style="рок">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-16-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-17.png" data-style="сафари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-17-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-18.png" data-style="спорт">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-18-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-19.png" data-style="спорт">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-19-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-20.png" data-style="творческий мужской">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-20-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-21.png" data-style="хип хоп">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-21-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-22.png" data-style="хип хоп">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-22-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-23.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-23-th.png" loading="lazy">
+                    </a>
+                                       <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-24.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-24-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+        </div>
+        <div class="clothes-slider __men dresses __for-mob">
+          <div class="owl-carousel owl-theme owl-custom-btns dresses__inner resizeable-imgs owl-loaded owl-drag">
+                                      
+                          
+                          
+                          
+                          
+                          
+                      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 240px;"><div class="owl-item active" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-1.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/men/man-clothe-1-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-2.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-2-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-3.png" data-style="гранж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-3-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-4.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-4-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-5.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-5-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-6.png" data-style="драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-6-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-7.png" data-style="драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-7-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-8.png" data-style="кантри">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-8-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-9.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-9-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-10.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-10-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-11.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-11-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-12.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-12-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-13.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-13-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-14.png" data-style="натуральный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-14-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-15.png" data-style="ретро">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-15-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-16.png" data-style="рок">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-16-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-17.png" data-style="сафари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-17-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-18.png" data-style="спорт">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-18-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-19.png" data-style="спорт">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-19-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-20.png" data-style="творческий мужской">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-20-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-21.png" data-style="хип хоп">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-21-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-22.png" data-style="хип хоп">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-22-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-23.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-23-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/men/man-clothe-24.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/men/man-clothe-24-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+        </div>
+      </div>
+      <div class="tab-pane fade active show" id="nav-clothe-style-2" role="tabpanel" aria-labelledby="nav-clothe-style-tab-2">
+        <div class="clothes-slider __women dresses">
+          <div class="owl-carousel owl-theme owl-custom-btns dresses__inner resizeable-imgs owl-loaded owl-drag">
+                                      
+                          
+                          
+                      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 552px;"><div class="owl-item active" style="width: 144px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-1.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/women/wm-cl-1-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-2.png" data-style="винтаж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/women/wm-cl-2-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-3.png" data-style="гранж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-3-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-4.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-4-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-5.png" data-style="драматический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-5-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-6.png" data-style="кантри">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-6-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-7.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-7-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-8.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-8-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-9.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-9-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 144px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-11.png" data-style="морской">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-11-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-12.png" data-style="наивная романтика">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-12-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-13.png" data-style="натуральный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-13-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-14.png" data-style="пин ап">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-14-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-15.png" data-style="ретро">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-15-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-16.png" data-style="рок">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-16-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-17.png" data-style="сафари драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-17-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-18.png" data-style="сложная романтика">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-18-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-19.png" data-style="спортивный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-19-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 144px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-20.png" data-style="спортшик">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-20-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-21.png" data-style="творческий">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-21-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-22.png" data-style="французский">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-22-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-23.png" data-style="французский">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-23-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-24.png" data-style="шик">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-24-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-25.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-25-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-26.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-26-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div></div></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div><div class="owl-dots disabled"></div></div>
+        </div>
+        <div class="clothes-slider __women dresses __for-tablet">
+          <div class="owl-carousel owl-theme owl-custom-btns dresses__inner resizeable-imgs owl-loaded owl-drag owl-hidden">
+                                      
+                          
+                          
+                          
+                      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 160px;"><div class="owl-item active" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-1.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/women/wm-cl-1-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-2.png" data-style="винтаж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/women/wm-cl-2-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-3.png" data-style="гранж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-3-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-4.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-4-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-5.png" data-style="драматический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-5-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-6.png" data-style="кантри">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-6-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-7.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-7-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-8.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-8-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-9.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-9-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-11.png" data-style="морской">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-11-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-12.png" data-style="наивная романтика">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-12-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-13.png" data-style="натуральный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-13-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-14.png" data-style="пин ап">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-14-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-15.png" data-style="ретро">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-15-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-16.png" data-style="рок">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-16-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-17.png" data-style="сафари драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-17-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-18.png" data-style="сложная романтика">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-18-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-19.png" data-style="спортивный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-19-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-20.png" data-style="спортшик">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-20-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-21.png" data-style="творческий">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-21-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-22.png" data-style="французский">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-22-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-23.png" data-style="французский">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-23-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-24.png" data-style="шик">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-24-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-25.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-25-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 0px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-26.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-26-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+        </div>
+        <div class="clothes-slider __women dresses __for-mob">
+          <div class="owl-carousel owl-theme owl-custom-btns dresses__inner resizeable-imgs owl-loaded owl-drag owl-hidden">
+                                      
+                          
+                          
+                          
+                          
+                          
+                          
+                      <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 4503px;"><div class="owl-item active" style="width: 603.2px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-1.png" data-style="бохо">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/women/wm-cl-1-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img " href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-2.png" data-style="винтаж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                            <img src="../images/women/wm-cl-2-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-3.png" data-style="гранж">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-3-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-4.png" data-style="деловой">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-4-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 603.2px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-5.png" data-style="драматический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-5-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-6.png" data-style="кантри">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-6-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-7.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-7-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-8.png" data-style="классический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-8-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 603.2px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-9.png" data-style="кэжуал">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-9-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-11.png" data-style="морской">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-11-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-12.png" data-style="наивная романтика">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-12-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-13.png" data-style="натуральный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-13-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 603.2px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-14.png" data-style="пин ап">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-14-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-15.png" data-style="ретро">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-15-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-16.png" data-style="рок">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-16-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-17.png" data-style="сафари драма">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-17-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 603.2px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-18.png" data-style="сложная романтика">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-18-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-19.png" data-style="спортивный">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-19-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-20.png" data-style="спортшик">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-20-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-21.png" data-style="творческий">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-21-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 603.2px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-22.png" data-style="французский">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-22-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-23.png" data-style="французский">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-23-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-24.png" data-style="шик">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-24-th.png" loading="lazy">
+                    </a>
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-25.png" data-style="этнический">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-25-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div><div class="owl-item" style="width: 603.2px; margin-right: 40px;"><div class="dresses-item">
+                <div class="dresses-item__inner d-flex flex-wrap">
+                                      <a class="resizeable-img not-paid" href="#" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo" data-full="https://imagecorp.ru/images/women/wm-cl-26.png" data-style="милитари">
+                      <span class="remove-img" data-target="#dress-photo" data-activate="dress-uploaded" data-resizecont=".dress-img" data-dest="#dress-photo">
+                        <svg class="icon icon-close ">
+                          <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+                        </svg>
+                      </span>
+                                              <span class="wardrobe-price">платно</span>
+                                            <img src="../images/women/wm-cl-26-th.png" loading="lazy">
+                    </a>
+                                  </div>
+              </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev disabled"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  </div>
+
+  
+
+  
+</section>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+  <div class="footer-top">
+    
+  </div>
+  <div class="footer-bottom text-center">Наша работа ребята 
+    
+  </div>
+</footer> 
+ <div class="auth-modal modal fade default-modal __w484" id="auth-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <svg class="icon icon-close ">
+            <use xlink:href="https://imagecorp.ru/images/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <nav class="w-100">
+          
+        </nav>
+      </div>
+      <div class="modal-body">
+   
+        <div class="tab-content" id="nav-tabContent">
+          
+          <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+            <form id="login-form" action="/auth/login/" method="post" autocomplete="off">
+
+ <div class="form-group field-loginform-username required">
+<input type="text" id="loginform-username" class="form-control" name="LoginForm[username]" placeholder="E-mail" autocomplete="off" aria-required="true">
+<p class="help-block help-block-error"></p>
+</div>  <div class="form-group field-loginform-password required">
+<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" placeholder="Пароль" autocomplete="off" aria-required="true">
+<p class="help-block help-block-error"></p>
+</div>  
+  <div class="d-none">
+    <div class="form-group field-loginform-redirecturl">
+<p class="help-block help-block-error"></p>
+</div>  </div>
+  <button class="btn btn-main w-100" type="submit">Войти</button>
+</form>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    var consentAccepted = localStorage.getItem('__consentAccepted');
+    if(!consentAccepted) {
+        var consentWindow = document.querySelector('.cookie-consent-popup');
+        if(consentWindow) {
+            consentWindow.classList.add('open');
+        }
+        var consentBtn = document.getElementById('consentBtn');
+        consentBtn.addEventListener('click', function() {
+            localStorage.setItem('__consentAccepted', true);
+            consentWindow.classList.remove('open');
+        });
+    }
+
+
+
+
+</script>
+
+
+    <style type="text/css">
+    body .ad-block :not(.h-auto) {
+      height: auto !important;
+    }
+  </style>
+  
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179548538-1');
+  </script>
+  <link href="../css2.css?family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+  <script src="../assets/f5b8f35c/jquery.js"></script>
+<script src="../assets/b45cd214/yii.js"></script>
+<script src="../js/vendors.js"></script>
+<script src="../js/main.js"></script>
+<script src="../assets/b45cd214/yii.validation.js"></script>
+<script src="../assets/b45cd214/yii.activeForm.js"></script>
+<script>
+            var dev = '<div style=\'display:none;\' class=\'developed-by\'><a title=\'Web Sites development|Создание веб-сайтов\' href=\'http://lanbortu.com\'>lanbortu</a></div>';
+            $('body').append(dev);
+        
+
+
+  var isGuest = 1;
+  $(document).on('click', '#save-style', function(e) {
+    e.preventDefault();
+    saveCollage();
+  });
+
+
+
+  function saveCollage() {
+    if(!$('.photo-uploaded').length) {
+      alert('Для сохранения нужно загрузить своё изображение');
+      return;
+    }
+
+    var clone = $('.photo-uploaded').clone();
+    clone.find('.wardrobe-upload').remove();
+    clone.find('.wardrobe-watermark').remove();
+    clone.find('.resize-drag').addClass('locked');
+    var style = clone.html();
+    style = JSON.stringify(style);
+    var styleId = $('#styleId').val();
+    if(isGuest) {
+      $('#collage-notification').modal('show');
+      return;
+    }
+    $.ajax({
+      method: 'POST',
+      data: {style: style, styleId: styleId},
+      dataType: 'json',
+      beforeSend: function() {
+        if(!isGuest) {
+          $('.wardrobe-body__inner').animate({
+            opacity: 0.4
+          }, 400);
+        }
+      },
+      success: function(res) {
+        if(!isGuest) {
+          alert('Стиль одежды сохранен');
+          $('.wardrobe-body__inner').animate({
+            opacity: 1
+          }, 400);
+          $('#styleId').val(res);
+        }
+      }
+    });
+
+  }
+
+  $('.go-to-reg-before').click(function(e) {
+    e.preventDefault();
+    $('#collage-notification').modal('hide');
+    $('#auth-modal').modal('show');
+  });
+
+
+  $('a.not-paid').click(function(e) {
+    $('#collage-notification-payment').modal('show');
+    return false;
+  });
+
+
+  $('#paymentBtn-reg').click(function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '/redirect-session/',
+      method: 'get',
+      data: {saveRedirectToPayment: true},
+      success: function(data) {
+        if(data) {
+          $('#collage-notification').modal('hide');
+          $('#collage-notification-payment').modal('hide');
+          $('#auth-modal').modal('show');
+        } else {
+          alert('Произошла ошибка при обработке данных. Пожалуйста, перезагрузите страницу и попробуйте отправить запрос еще раз.');
+        }
+      }
+    })
+  });
+
+
+
+</script><div style="display:none;" class="developed-by"><a title="Web Sites development|Создание веб-сайтов" href="http://lanbortu.com">lanbortu</a></div><div style="display:none;" class="developed-by"><a title="Web Sites development|Создание веб-сайтов" href="http://lanbortu.com">lanbortu</a></div><div style="display:none;" class="developed-by"><a title="Web Sites development|Создание веб-сайтов" href="http://lanbortu.com">lanbortu</a></div><div style="display:none;" class="developed-by"><a title="Web Sites development|Создание веб-сайтов" href="http://lanbortu.com">lanbortu</a></div><div style="display:none;" class="developed-by"><a title="Web Sites development|Создание веб-сайтов" href="http://lanbortu.com">lanbortu</a></div><div style="display:none;" class="developed-by"><a title="Web Sites development|Создание веб-сайтов" href="http://lanbortu.com">lanbortu</a></div><div style="display:none;" class="developed-by"><a title="Web Sites development|Создание веб-сайтов" href="http://lanbortu.com">lanbortu</a></div>
+<script>jQuery(function ($) {
+jQuery('#signup').yiiActiveForm([{"id":"signupform-name","name":"name","container":".field-signupform-name","input":"#signupform-name","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Имя»."});value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Имя» должно быть строкой.","max":150,"tooLong":"Значение «Имя» должно содержать максимум 150 символов.","skipOnEmpty":1});}},{"id":"signupform-email","name":"email","container":".field-signupform-email","input":"#signupform-email","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «E-mail»."});value = yii.validation.trim($form, attribute, [], value);yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Значение «E-mail» не является правильным email адресом.","enableIDN":false,"skipOnEmpty":1});}},{"id":"signupform-password","name":"password","container":".field-signupform-password","input":"#signupform-password","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Пароль»."});value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Пароль» должно быть строкой.","max":255,"tooLong":"Значение «Пароль» должно содержать максимум 255 символов.","skipOnEmpty":1});}},{"id":"signupform-repeat_password","name":"repeat_password","container":".field-signupform-repeat_password","input":"#signupform-repeat_password","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Повоторите пароль»."});value = yii.validation.trim($form, attribute, [], value);yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"signupform-password","compareAttributeName":"SignupForm[password]","skipOnEmpty":1,"message":"Значение «Повоторите пароль» должно быть равно «Пароль»."}, $form);}},{"id":"signupform-confirm","name":"confirm","container":".field-signupform-confirm","input":"#signupform-confirm","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Данное условие обязательное","requiredValue":1});}},{"id":"signupform-redirecturl","name":"redirectUrl","container":".field-signupform-redirecturl","input":"#signupform-redirecturl","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Redirect Url» должно быть строкой.","max":150,"tooLong":"Значение «Redirect Url» должно содержать максимум 150 символов.","skipOnEmpty":1});}}], []);
+jQuery('#login-form').yiiActiveForm([{"id":"loginform-username","name":"username","container":".field-loginform-username","input":"#loginform-username","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «E-mail»."});}},{"id":"loginform-password","name":"password","container":".field-loginform-password","input":"#loginform-password","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Пароль»."});}},{"id":"loginform-rememberme","name":"rememberMe","container":".field-loginform-rememberme","input":"#loginform-rememberme","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.boolean(value, messages, {"trueValue":"1","falseValue":"0","message":"Значение «Запомнить меня» должно быть равно «1» или «0».","skipOnEmpty":1});}},{"id":"loginform-redirecturl","name":"redirectUrl","container":".field-loginform-redirecturl","input":"#loginform-redirecturl","error":".help-block.help-block-error","validateOnBlur":false,"validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Redirect Url» должно быть строкой.","max":150,"tooLong":"Значение «Redirect Url» должно содержать максимум 150 символов.","skipOnEmpty":1});}}], []);
+});</script>
+
+
+
+
+<style type="text/css">
+  @media (max-width: 1023px) {
+    .mob-mt-5 {
+      margin-top: 50px;
+    }
+  }
+  
+</style>
+</body></html>
